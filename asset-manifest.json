@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/oc_kasa/static/css/main.58ca8716.css",
-    "main.js": "/oc_kasa/static/js/main.60db3b0a.js",
+    "main.js": "/oc_kasa/static/js/main.431b9ca8.js",
     "static/media/montagne.png": "/oc_kasa/static/media/montagne.ca36510f694dfe1d4bf6.png",
     "static/media/mer.png": "/oc_kasa/static/media/mer.969f0a4de80a6db1abb0.png",
     "static/media/logo-kasa.svg": "/oc_kasa/static/media/logo-kasa.a6101328193bb3191cbcb50c120ec0d1.svg",
@@ -15,10 +15,10 @@
     "static/media/Arrow_Forward.svg": "/oc_kasa/static/media/Arrow_Forward.fcd8131c4741f9116bc0ec56cc449b13.svg",
     "static/media/Arrow_Backward.svg": "/oc_kasa/static/media/Arrow_Backward.10a56405f7ff25b1792c6025af90ecbd.svg",
     "main.58ca8716.css.map": "/oc_kasa/static/css/main.58ca8716.css.map",
-    "main.60db3b0a.js.map": "/oc_kasa/static/js/main.60db3b0a.js.map"
+    "main.431b9ca8.js.map": "/oc_kasa/static/js/main.431b9ca8.js.map"
   },
   "entrypoints": [
     "static/css/main.58ca8716.css",
-    "static/js/main.60db3b0a.js"
+    "static/js/main.431b9ca8.js"
   ]
 }
