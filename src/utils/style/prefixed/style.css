@@ -1,0 +1,579 @@
+@charset "UTF-8";
+/* Charte graphique Couleurs : */
+/* Color light red*/
+/* Color dark red */
+/* Reset */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+/* Page index.html */
+body {
+  max-width: 1400px;
+  margin: auto;
+  background: white;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+}
+
+/* Page title */
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 50px;
+  color: black;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 1.2rem;
+  color: #FF6060;
+  background-color: #F6F6F6;
+}
+
+details summary {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 47px;
+  padding: 5px 18px;
+  color: white;
+  background-color: #FF6060;
+  border: none;
+  box-shadow: 3px 0px 3px black;
+  border-radius: 5px;
+  text-align: left;
+}
+details summary::marker {
+  font-size: 1.5em;
+}
+details summary img {
+  position: relative;
+  Top: 10px;
+  Left: 4px;
+  Width: 24px;
+  Height: 13.71px;
+}
+details p, details ul {
+  position: relative;
+  z-index: 1;
+  bottom: 5px;
+  width: 100%;
+  margin: 0;
+  padding: 36px 18px;
+  /* Figma typography : 400 */
+  font-weight: 400;
+  border-radius: 5px;
+  color: #FF6060;
+  background-color: #F6F6F6;
+  box-shadow: 3px 3px 4px black;
+  text-align: left;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 142.6%;
+}
+details ul {
+  list-style-type: none;
+}
+
+details[open] > summary {
+  width: 100%;
+  background-color: #FF6060;
+}
+details[open] > summary::marker {
+  font-size: 1.5em;
+}
+
+.slideshowContainer {
+  width: 100%;
+  height: 415px;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slideshowImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slideshowCommands {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 3%;
+  right: 3%;
+  width: 94%;
+  height: 100%;
+}
+.slideshowCommands--Ok {
+  display: flex;
+  justify-content: space-between;
+}
+.slideshowCommands--NotOk {
+  display: none;
+  justify-content: space-between;
+}
+.slideshowCommands button {
+  position: relative;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.slideshowCommands button img {
+  Width: 46.68px;
+  Height: 79.2px;
+}
+.slideshowCommands .slideshowBulletPoints {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.RatingStar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15.25px;
+}
+.RatingStar img {
+  width: 24.75px;
+  height: 24px;
+}
+
+.HeaderHomeLogo {
+  height: 68px;
+}
+
+.HeaderNavContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 40px 0px;
+}
+
+.banner {
+  position: relative;
+  height: 223px;
+  border-radius: 25px;
+  margin: 23px 100px 43px 100px;
+  box-shadow: 0px 4px 4px #1c1a19;
+}
+.banner__txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  font-weight: 500;
+  font-size: 3rem;
+  white-space: nowrap;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+  -webkit-filter: brightness(75%);
+          filter: brightness(75%);
+}
+
+.FooterContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 100px 0 100px;
+  padding: 60px 0;
+  background-color: black;
+}
+.FooterContainer img {
+  height: 40px;
+}
+
+.FooterText {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  color: white;
+  padding-top: 30px;
+}
+
+.CardsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* Si vous avez plusieurs lignes dans votre Flexbox, vous pouvez choisir comment celles-ci seront réparties avec align-content .
+  Cette propriété n'a aucun effet s'il n'y a qu'une seule ligne dans la Flexbox. Les éléments doivent aller à la ligne avec flex-wrap. */
+  flex-wrap: wrap;
+  align-content: space-between;
+  border-radius: 25px;
+  margin: 0 100px 50px 100px;
+  padding: 56px 40px 6px 0;
+}
+.CardsContainer--lightgrey {
+  background-color: #F6F6F6;
+}
+.CardsContainer--darkgrey {
+  background-color: #A9A9A9;
+}
+
+.LoaderWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.LoaderWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 31px;
+  margin: 0 208px 31px 208px;
+  /* Figma typography : 500 */
+  font-weight: 500;
+  font-size: 24px;
+  color: white;
+}
+
+.logementContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 20px 100px 0 100px;
+}
+
+.logementMiddleContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logementInfosContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.logementInfosTitle {
+  margin-left: 0;
+  text-align: start;
+  font-weight: 500;
+  font-size: 2.3rem;
+  line-height: 142.6%;
+  color: #FF6060;
+}
+
+.logementInfosLocation {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  color: #FF6060;
+}
+
+.logementInfosTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+.logementInfosTags__tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  padding: 2px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: white;
+  background: #FF6060;
+}
+
+.logementHostContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.logementHost {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.logementHostName {
+  width: -webkit-min-content;
+  width: min-content;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  color: #FF6060;
+}
+
+.logementHostPicture {
+  width: 64px;
+  height: 64px;
+  border-radius: 50px;
+}
+
+.logementDropdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 76px;
+  margin: 24px 0 31px 0;
+  /* Figma typography : 500 */
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+}
+
+.logementDropdownDetail {
+  width: 100%;
+}
+
+/***************/
+/* End Of File */
+/***************/
+.ErrorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 110px;
+}
+
+.ErrorSubtitle {
+  margin-top: 66px;
+  font-weight: 500;
+  font-size: 2.2em;
+  line-height: 142.6%;
+  color: #FF6060;
+}
+
+.ErrorLink {
+  margin-top: 120px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 1.1em;
+  line-height: 142.6%;
+  color: #FF6060;
+}
+
+.ErrorIllustration {
+  max-width: 600px;
+}
+
+/* -------------------------------------------------- */
+/* Media Queries */
+/* Spécifications techniques, Breakpoints : Nous avons convenu avec le designer UI d’utiliser 992 px et 768 px :
+● >=992 px pour les écrans d’ordinateurs ;
+● >=768 px pour les tablettes ;
+● et tout ce qui est en dessous de 768 pour les téléphones portables. */
+/* -------------------------------------------------- */
+@media screen and (max-width: 768px) {
+  .HeaderHomeLogo {
+    height: 42px;
+  }
+  .HeaderNavContainer {
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px 0px;
+  }
+  .banner {
+    height: 111px;
+    margin: 0px 20px 22px 20px;
+  }
+  .banner__txt {
+    width: 80%;
+    font-size: 7vw;
+    white-space: normal;
+  }
+  .logementContainer {
+    margin: 0 20px 0 20px;
+  }
+  .logementInfosContainer {
+    margin-top: 15px;
+  }
+  .logementMiddleContainer {
+    flex-direction: column;
+  }
+  .logementInfosTitle {
+    font-size: 1.1em;
+  }
+  .logementInfosLocation {
+    font-size: 1em;
+  }
+  .logementInfosTags {
+    margin-top: 10px;
+  }
+  .logementInfosTags__tag {
+    height: 18px;
+    font-size: 0.8em;
+  }
+  .logementHostContainer {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .logementHostName {
+    font-size: 0.9em;
+  }
+  .logementHostPicture {
+    width: 32px;
+    height: 32px;
+  }
+  .logementDropdown {
+    flex-direction: column;
+    gap: 31px;
+    margin: 24px 0 31px 0;
+    font-size: 0.9em;
+  }
+  .logementDropdownDetail {
+    width: 100%;
+  }
+  details summary {
+    height: 30px;
+  }
+  details summary img {
+    Top: 5px;
+    Width: 16px;
+    Height: 9.14px;
+  }
+  details p {
+    font-size: 0.9em;
+  }
+  .RatingStar {
+    gap: 6.59px;
+  }
+  .RatingStar img {
+    width: 13.41px;
+    height: 13px;
+  }
+  .aboutContainer {
+    gap: 31px;
+    margin: 0 20px 31px 20px;
+  }
+  .CardsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin: 0 20px 50px 20px;
+    padding: 0;
+  }
+  .CardsContainer--lightgrey {
+    background-color: white;
+  }
+  .CardsContainer--darkgrey {
+    background-color: #4F4C6B;
+  }
+  .ErrorSubtitle {
+    margin: 11px 57px 0 58px;
+    font-size: 1.1em;
+  }
+  .ErrorLink {
+    margin-top: 120px;
+    font-size: 0.9em;
+  }
+  .ErrorIllustration {
+    max-width: 198px;
+  }
+  .FooterContainer {
+    margin: 0 20px 0 20px;
+    padding: 60px 0;
+  }
+  .FooterContainer img {
+    height: 31px;
+  }
+  .FooterText {
+    font-size: 0.9em;
+  }
+}
+/* -------------------------------------------------- */
+/* Media queries tablette */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .HeaderHomeLogo {
+    height: 52px;
+  }
+  .HeaderNavContainer {
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 40px 0px;
+  }
+  .banner {
+    height: 165px;
+    margin: 23px 50px 43px 50px;
+  }
+  .banner__txt {
+    font-size: 2.5em;
+  }
+  .logementContainer {
+    margin: 20px 50px 0 50px;
+  }
+  .logementInfosTitle {
+    font-size: 1.5em;
+  }
+  .aboutContainer {
+    gap: 31px;
+    margin: 0 50px 31px 50px;
+  }
+  .CardsContainer {
+    align-content: space-between;
+    margin: 0 50px 50px 50px;
+    padding: 56px 40px 6px 0;
+  }
+  .ErrorSubtitle {
+    margin-top: 66px;
+    font-size: 1.3em;
+  }
+  .ErrorLink {
+    margin-top: 120px;
+    font-size: 1.2em;
+  }
+  .ErrorIllustration {
+    max-width: 400px;
+  }
+  .FooterContainer {
+    margin: 0 50px 0 50px;
+    padding: 60px 0;
+  }
+  .FooterText {
+    font-size: 1.1em;
+  }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3N0eWxlLmNzcyIsIi4uLy4uLy4uLy4uL3Nhc3MvdXRpbHMvX3ZhcmlhYmxlcy5zY3NzIiwiLi4vLi4vLi4vLi4vc2Fzcy9iYXNlL19iYXNlLnNjc3MiLCIuLi8uLi8uLi8uLi9zYXNzL2NvbXBvbmVudHMvX2Ryb3Bkb3duLnNjc3MiLCIuLi8uLi8uLi8uLi9zYXNzL2NvbXBvbmVudHMvX2NhcnJvdXNlbC5zY3NzIiwiLi4vLi4vLi4vLi4vc2Fzcy9jb21wb25lbnRzL19yYXRpbmcuc2NzcyIsIi4uLy4uLy4uLy4uL3Nhc3MvbGF5b3V0L19oZWFkZXIuc2NzcyIsIi4uLy4uLy4uLy4uL3Nhc3MvbGF5b3V0L19iYW5uZXIuc2NzcyIsIi4uLy4uLy4uLy4uL3Nhc3MvbGF5b3V0L19mb290ZXIuc2NzcyIsIi4uLy4uLy4uLy4uL3Nhc3MvcGFnZXMvX2hvbWUuc2NzcyIsIi4uLy4uLy4uLy4uL3Nhc3MvcGFnZXMvX2Fib3V0LnNjc3MiLCIuLi8uLi8uLi8uLi9zYXNzL3BhZ2VzL19sb2dlbWVudC5zY3NzIiwiLi4vLi4vLi4vLi4vc2Fzcy9wYWdlcy9fZXJyb3Iuc2NzcyIsIi4uLy4uLy4uLy4uL3Nhc3MvYmFzZS9fbWVkaWFfcXVlcmllcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLGdCQUFnQjtBQ0FoQixnQ0FBQTtBQUVBLG1CQUFBO0FBRUEsbUJBQUE7QUNKQSxVQUFBO0FBQ0E7RUFDQyxTQUFBO0VBQ0Esc0JBQUE7RUFDQSxVQUFBO0VBQ0EscUNBQUE7RUFDQSxrQkFBQTtBRktEOztBRUZBLG9CQUFBO0FBQ0E7RUFDQyxpQkFBQTtFQUNBLFlBQUE7RUFDQSxpQkROYTtFQ09iLHFDQUFBO0VBQ0Esa0JBQUE7RUFDQSxnQkFBQTtFQUNBLGNBQUE7QUZLRDs7QUVGQSxlQUFBO0FBQ0E7RUFDQyxxQ0FBQTtFQUNBLGtCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxlQUFBO0VBQ0Esa0JBQUE7RUFDQSxjQUFBO0VBQ0EsWURwQmE7QUR5QmQ7O0FF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 */

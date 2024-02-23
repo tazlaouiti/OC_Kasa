@@ -1,0 +1,17 @@
+@import "./utils/variables";
+
+@import "./base/base";
+
+@import './components/dropdown.scss', './components/carrousel.scss', './components/rating.scss';
+
+@import "./layout/header";
+@import "./layout/banner";
+@import "./layout/footer";
+
+@import "./pages/home";
+@import "./pages/about";
+@import "./pages/logement";
+@import "./pages/error";
+
+@import "./base/media_queries";
+

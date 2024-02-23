@@ -1,0 +1,205 @@
+/* -------------------------------------------------- */
+/* Media Queries */
+/* Spécifications techniques, Breakpoints : Nous avons convenu avec le designer UI d’utiliser 992 px et 768 px :
+● >=992 px pour les écrans d’ordinateurs ;
+● >=768 px pour les tablettes ;
+● et tout ce qui est en dessous de 768 pour les téléphones portables. */
+
+
+/* -------------------------------------------------- */
+@media screen and (max-width: 768px) {
+
+	.HeaderHomeLogo {
+		height: 42px;
+	}
+
+	.HeaderNavContainer {
+		align-items: center;
+		margin-left: 20px;
+		margin-right: 20px;
+		padding: 20px 0px;
+	}
+	.banner {
+		height: 111px;
+		margin : 0px 20px 22px 20px;
+		&__txt { 
+			width: 80%;
+			font-size: 7vw; // Computed method => Figma: 24px with banner width=335
+			white-space : normal;
+		}
+	}
+	.logementContainer {
+		margin: 0 20px 0 20px;
+	}
+	.logementInfosContainer {
+		margin-top: 15px;
+	}
+	.logementMiddleContainer {
+		flex-direction: column;
+	}
+	.logementInfosTitle {
+		font-size: 1.1em; // Figma: 18px
+	}
+	.logementInfosLocation {
+		font-size: 1em; // Figma: 14px
+	}
+	.logementInfosTags {
+		margin-top: 10px;
+		&__tag {
+		height: 18px;
+		font-size: 0.8em; // Figma: 10px
+		}
+	}
+	.logementHostContainer {
+		flex-direction: row-reverse;
+		justify-content: space-between;
+	}
+	.logementHostName {
+		font-size: 0.9em; // Figma: 12px
+	}
+	.logementHostPicture{
+		width: 32px;
+		height: 32px;
+	}
+	.logementDropdown {
+		flex-direction: column;
+		gap: 31px;
+		margin: 24px 0 31px 0;
+		font-size: 0.9em; // Figma: 13px
+	}
+	.logementDropdownDetail {
+		width: 100%;
+	}
+	details {
+		 summary {
+			// Figma Mobil: 335 x 30px
+			height: 30px;
+			font-size: 13px; // Figma: 13px
+			img {
+				Top: 5px;
+				Width: 16px;
+				Height: 9.14px;
+			}
+		}
+		 p {
+			font-size: 12px; // Figma: 12px
+		}
+		 ul {
+			font-size: 0.9em; // Figma: 12px
+		}
+	}
+	.RatingStar {
+		// Figma: 6.59px
+		gap: 6.59px;
+		//Figma: 13.41 x 13px
+		img {
+			width: 13.41px;
+			height: 13px;
+		}
+	}
+	.aboutContainer {
+		gap: 31px;
+		margin: 0 20px 31px 20px;
+	}
+	.CardsContainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-content: space-between;
+		margin: 0 20px 50px 20px;
+		padding: 0;
+		&--lightgrey {
+			background-color: $color-white;
+		}
+		&--darkgrey {
+			background-color: $color-backgroundDark;
+		}
+	}
+	.ErrorSubtitle {
+		margin: 11px 57px 0 58px;
+		font-size: 1.1em; // Figma: 18px
+	}
+
+	.ErrorLink {
+		margin-top: 120px;
+		font-size: 0.9em; // Figma: 14px
+	}
+
+	.ErrorIllustration {
+		max-width: 198px;
+	}
+
+	.FooterContainer {
+		margin: 0 20px 0 20px;
+		padding: 60px 0;
+		img {
+			// Figma: 31,51px
+			height: 31px;
+		}
+	}
+	.FooterText {
+		font-size: 0.9em; // Figma: 12px
+	}
+}
+/* -------------------------------------------------- */
+/* Media queries tablette */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.HeaderHomeLogo {
+		height: 52px;
+	}
+
+	.HeaderNavContainer {
+		align-items: center;
+		margin-left: 50px;
+		margin-right: 50px;
+		padding: 40px 0px;
+	}
+
+	.banner {
+		height: 165px;
+		margin : 23px 50px 43px 50px;
+		&__txt { 
+			font-size: 2.5em;
+		}
+	}
+
+	.logementContainer {
+		margin: 20px 50px 0 50px;
+	}
+	
+	.logementInfosTitle {
+		font-size: 1.5em; // Figma: 24px
+	}
+	.aboutContainer {
+		gap: 31px;
+		margin: 0 50px 31px 50px;
+	}
+	.CardsContainer {
+		align-content: space-between;
+		margin: 0 50px 50px 50px;
+		padding: 56px 40px 6px 0;
+	}
+
+	.ErrorSubtitle {
+		margin-top: 66px;
+		font-size: 1.3em; 
+	}
+
+	.ErrorLink {
+		margin-top: 120px;
+		font-size: 1.2em; 
+	}
+
+	.ErrorIllustration {
+		max-width: 400px;
+	}
+	.FooterContainer {
+		margin: 0 50px 0 50px;
+		padding: 60px 0;
+	}
+	.FooterText {
+		font-size: 1.1em; // Figma: 18px
+	}
+}
+

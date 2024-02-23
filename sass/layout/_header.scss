@@ -1,0 +1,15 @@
+.HeaderHomeLogo {
+	height: 68px;
+}
+
+.HeaderNavContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 100px;
+	margin-right: 100px;
+	padding: 40px 0px;
+	font-family: "Montserrat";
+}
+nav .unActivePage { text-decoration : none }
+nav .activePage { text-decoration : underline }

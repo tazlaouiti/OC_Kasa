@@ -1,0 +1,38 @@
+/* Reset */
+* {	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Montserrat";
+	font-style: normal;
+}
+
+/* Page index.html */
+body {
+	//max-width: 1400px;
+	background: $color-white;
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1;
+}
+
+/* Page title */
+h1 {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 2rem;
+	text-align: center;
+	margin: 0 50px;
+	color: $color-black;
+}
+
+p {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-size: 1.2rem;
+	color: $color-primary;
+	background-color: $color-lightgray;
+}
+
+

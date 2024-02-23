@@ -1,0 +1,18 @@
+.LoaderWrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.aboutContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 31px;
+	margin: 0 208px 31px 208px;
+	/* Figma typography : 500 */
+	font-weight: 500;
+	font-size: 24px;
+	color: $color-white;
+	//background: $color-primary;
+}
+

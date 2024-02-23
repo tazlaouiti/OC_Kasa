@@ -1,0 +1,22 @@
+.FooterContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0 100px 0 100px;
+	padding: 60px 0;
+	background-color: $color-black;
+	img {
+		// Figma: 39,44px
+		height: 40px;
+	}
+}
+.FooterText {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 1.5em; // Figma: 24px
+	color: $color-white;
+	padding-top: 30px;
+}
+

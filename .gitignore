@@ -1,0 +1,17 @@
+# build
+build
+
+# node.js modules
+node_modules
+back/node_modules
+
+# Keycodes
+storage/*.key
+.env
+
+
+# Files and directories beginning by "000 -" are excluded from GitHub
+000 - *
+
+# OpenClassroom Spec directory 
+000 - OpenClassroom/

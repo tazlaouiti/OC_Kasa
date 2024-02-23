@@ -1,0 +1,575 @@
+@charset "UTF-8";
+/* Charte graphique Couleurs : */
+/* Color light red*/
+/* Color dark red */
+/* Reset */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+/* Page index.html */
+body {
+  max-width: 1400px;
+  margin: auto;
+  background: white;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+}
+
+/* Page title */
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 50px;
+  color: black;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 1.2rem;
+  color: #FF6060;
+  background-color: #F6F6F6;
+}
+
+details summary {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 47px;
+  padding: 5px 18px;
+  color: white;
+  background-color: #FF6060;
+  border: none;
+  box-shadow: 3px 0px 3px black;
+  border-radius: 5px;
+  text-align: left;
+}
+details summary::marker {
+  font-size: 1.5em;
+}
+details summary img {
+  position: relative;
+  Top: 10px;
+  Left: 4px;
+  Width: 24px;
+  Height: 13.71px;
+}
+details p, details ul {
+  position: relative;
+  z-index: 1;
+  bottom: 5px;
+  width: 100%;
+  margin: 0;
+  padding: 36px 18px;
+  /* Figma typography : 400 */
+  font-weight: 400;
+  border-radius: 5px;
+  color: #FF6060;
+  background-color: #F6F6F6;
+  box-shadow: 3px 3px 4px black;
+  text-align: left;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 142.6%;
+}
+details ul {
+  list-style-type: none;
+}
+
+details[open] > summary {
+  width: 100%;
+  background-color: #FF6060;
+}
+details[open] > summary::marker {
+  font-size: 1.5em;
+}
+
+.slideshowContainer {
+  width: 100%;
+  height: 415px;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slideshowImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slideshowCommands {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 3%;
+  right: 3%;
+  width: 94%;
+  height: 100%;
+}
+.slideshowCommands--Ok {
+  display: flex;
+  justify-content: space-between;
+}
+.slideshowCommands--NotOk {
+  display: none;
+  justify-content: space-between;
+}
+.slideshowCommands button {
+  position: relative;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.slideshowCommands button img {
+  Width: 46.68px;
+  Height: 79.2px;
+}
+.slideshowCommands .slideshowBulletPoints {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.RatingStar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15.25px;
+}
+.RatingStar img {
+  width: 24.75px;
+  height: 24px;
+}
+
+.HeaderHomeLogo {
+  height: 68px;
+}
+
+.HeaderNavContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 40px 0px;
+}
+
+.banner {
+  position: relative;
+  height: 223px;
+  border-radius: 25px;
+  margin: 23px 100px 43px 100px;
+  box-shadow: 0px 4px 4px #1c1a19;
+}
+.banner__txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: 500;
+  font-size: 3rem;
+  white-space: nowrap;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+  filter: brightness(75%);
+}
+
+.FooterContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 100px 0 100px;
+  padding: 60px 0;
+  background-color: black;
+}
+.FooterContainer img {
+  height: 40px;
+}
+
+.FooterText {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  color: white;
+  padding-top: 30px;
+}
+
+.CardsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* Si vous avez plusieurs lignes dans votre Flexbox, vous pouvez choisir comment celles-ci seront réparties avec align-content .
+  Cette propriété n'a aucun effet s'il n'y a qu'une seule ligne dans la Flexbox. Les éléments doivent aller à la ligne avec flex-wrap. */
+  flex-wrap: wrap;
+  align-content: space-between;
+  border-radius: 25px;
+  margin: 0 100px 50px 100px;
+  padding: 56px 40px 6px 0;
+}
+.CardsContainer--lightgrey {
+  background-color: #F6F6F6;
+}
+.CardsContainer--darkgrey {
+  background-color: #A9A9A9;
+}
+
+.LoaderWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.LoaderWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 31px;
+  margin: 0 208px 31px 208px;
+  /* Figma typography : 500 */
+  font-weight: 500;
+  font-size: 24px;
+  color: white;
+}
+
+.logementContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 20px 100px 0 100px;
+}
+
+.logementMiddleContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logementInfosContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.logementInfosTitle {
+  margin-left: 0;
+  text-align: start;
+  font-weight: 500;
+  font-size: 2.3rem;
+  line-height: 142.6%;
+  color: #FF6060;
+}
+
+.logementInfosLocation {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  color: #FF6060;
+}
+
+.logementInfosTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+.logementInfosTags__tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  padding: 2px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: white;
+  background: #FF6060;
+}
+
+.logementHostContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.logementHost {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.logementHostName {
+  width: min-content;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  color: #FF6060;
+}
+
+.logementHostPicture {
+  width: 64px;
+  height: 64px;
+  border-radius: 50px;
+}
+
+.logementDropdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 76px;
+  margin: 24px 0 31px 0;
+  /* Figma typography : 500 */
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+}
+
+.logementDropdownDetail {
+  width: 100%;
+}
+
+/***************/
+/* End Of File */
+/***************/
+.ErrorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 110px;
+}
+
+.ErrorSubtitle {
+  margin-top: 66px;
+  font-weight: 500;
+  font-size: 2.2em;
+  line-height: 142.6%;
+  color: #FF6060;
+}
+
+.ErrorLink {
+  margin-top: 120px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 1.1em;
+  line-height: 142.6%;
+  color: #FF6060;
+}
+
+.ErrorIllustration {
+  max-width: 600px;
+}
+
+/* -------------------------------------------------- */
+/* Media Queries */
+/* Spécifications techniques, Breakpoints : Nous avons convenu avec le designer UI d’utiliser 992 px et 768 px :
+● >=992 px pour les écrans d’ordinateurs ;
+● >=768 px pour les tablettes ;
+● et tout ce qui est en dessous de 768 pour les téléphones portables. */
+/* -------------------------------------------------- */
+@media screen and (max-width: 768px) {
+  .HeaderHomeLogo {
+    height: 42px;
+  }
+  .HeaderNavContainer {
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px 0px;
+  }
+  .banner {
+    height: 111px;
+    margin: 0px 20px 22px 20px;
+  }
+  .banner__txt {
+    width: 80%;
+    font-size: 7vw;
+    white-space: normal;
+  }
+  .logementContainer {
+    margin: 0 20px 0 20px;
+  }
+  .logementInfosContainer {
+    margin-top: 15px;
+  }
+  .logementMiddleContainer {
+    flex-direction: column;
+  }
+  .logementInfosTitle {
+    font-size: 1.1em;
+  }
+  .logementInfosLocation {
+    font-size: 1em;
+  }
+  .logementInfosTags {
+    margin-top: 10px;
+  }
+  .logementInfosTags__tag {
+    height: 18px;
+    font-size: 0.8em;
+  }
+  .logementHostContainer {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .logementHostName {
+    font-size: 0.9em;
+  }
+  .logementHostPicture {
+    width: 32px;
+    height: 32px;
+  }
+  .logementDropdown {
+    flex-direction: column;
+    gap: 31px;
+    margin: 24px 0 31px 0;
+    font-size: 0.9em;
+  }
+  .logementDropdownDetail {
+    width: 100%;
+  }
+  details summary {
+    height: 30px;
+  }
+  details summary img {
+    Top: 5px;
+    Width: 16px;
+    Height: 9.14px;
+  }
+  details p {
+    font-size: 0.9em;
+  }
+  .RatingStar {
+    gap: 6.59px;
+  }
+  .RatingStar img {
+    width: 13.41px;
+    height: 13px;
+  }
+  .aboutContainer {
+    gap: 31px;
+    margin: 0 20px 31px 20px;
+  }
+  .CardsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin: 0 20px 50px 20px;
+    padding: 0;
+  }
+  .CardsContainer--lightgrey {
+    background-color: white;
+  }
+  .CardsContainer--darkgrey {
+    background-color: #4F4C6B;
+  }
+  .ErrorSubtitle {
+    margin: 11px 57px 0 58px;
+    font-size: 1.1em;
+  }
+  .ErrorLink {
+    margin-top: 120px;
+    font-size: 0.9em;
+  }
+  .ErrorIllustration {
+    max-width: 198px;
+  }
+  .FooterContainer {
+    margin: 0 20px 0 20px;
+    padding: 60px 0;
+  }
+  .FooterContainer img {
+    height: 31px;
+  }
+  .FooterText {
+    font-size: 0.9em;
+  }
+}
+/* -------------------------------------------------- */
+/* Media queries tablette */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .HeaderHomeLogo {
+    height: 52px;
+  }
+  .HeaderNavContainer {
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 40px 0px;
+  }
+  .banner {
+    height: 165px;
+    margin: 23px 50px 43px 50px;
+  }
+  .banner__txt {
+    font-size: 2.5em;
+  }
+  .logementContainer {
+    margin: 20px 50px 0 50px;
+  }
+  .logementInfosTitle {
+    font-size: 1.5em;
+  }
+  .aboutContainer {
+    gap: 31px;
+    margin: 0 50px 31px 50px;
+  }
+  .CardsContainer {
+    align-content: space-between;
+    margin: 0 50px 50px 50px;
+    padding: 56px 40px 6px 0;
+  }
+  .ErrorSubtitle {
+    margin-top: 66px;
+    font-size: 1.3em;
+  }
+  .ErrorLink {
+    margin-top: 120px;
+    font-size: 1.2em;
+  }
+  .ErrorIllustration {
+    max-width: 400px;
+  }
+  .FooterContainer {
+    margin: 0 50px 0 50px;
+    padding: 60px 0;
+  }
+  .FooterText {
+    font-size: 1.1em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

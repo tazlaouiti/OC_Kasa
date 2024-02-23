@@ -1,0 +1,31 @@
+.banner {
+	position: relative;
+	height: 223px;
+	border-radius: 25px;
+	// Figma : 63px / 40px de padding dan le header à retirer = 23px
+	margin : 23px 100px 43px 100px;
+	&__txt { 
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		// half of its width and height.
+		transform: translate(-50%, -50%);
+		color: white;
+		font-weight: 500;
+		font-size: 3rem; // Figma: 48px
+		white-space : nowrap;
+	}
+
+}
+
+.banner img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 25px;
+	// La propriété filter permet d’appliquer divers effets graphiques à un élément. La fonction bright() peut être utilisée comme valeur 	// pour appliquer un multiplicateur linéaire pour le faire apparaître plus sombre ou plus clair que l’original. 
+	// Pour assombrir une image, toute valeur inférieure à 100 % peut être utilisée pour assombrir l’image de ce pourcentage.
+	filter: brightness(75%);
+}
+
+

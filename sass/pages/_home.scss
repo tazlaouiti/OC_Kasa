@@ -1,0 +1,28 @@
+.CardsContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	/* Si vous avez plusieurs lignes dans votre Flexbox, vous pouvez choisir comment celles-ci seront réparties avec align-content .
+	Cette propriété n'a aucun effet s'il n'y a qu'une seule ligne dans la Flexbox. Les éléments doivent aller à la ligne avec flex-wrap. */
+	flex-wrap: wrap;
+	align-content: space-between;
+	border-radius: 25px;
+	margin: 0 100px 50px 100px;
+	padding: 56px 40px 6px 0;
+
+  	// Codebase de l'exercice qui ne marche qu'avec le style in composant : const CardsContainer = styled.div`.....`
+	// !!! NE PAS OUBLIER D'AJOUTER la props theme={theme} à la balise ouvrante <CardsContainer theme={theme}> !!!
+	//background-color: ${({ theme }) => theme === 'light' ? colors.lightgrey : colors.darkgrey};
+
+	&--lightgrey {
+		background-color: $color-lightgray;
+	}
+	&--darkgrey {
+		background-color: $color-darkgray;
+	}
+}
+
+.LoaderWrapper {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,14 @@
+.RatingStar {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+	// Figma: 15.25px
+	gap: 15.25px;
+	//Figma: 24.75 x 24px
+	img {
+		width: 24.75px;
+		height: 24px;
+	}
+}
+
