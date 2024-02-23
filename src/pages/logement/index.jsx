@@ -14,7 +14,7 @@ const LoaderWrapper = styled.div`
 `
 
 function Logement() {
-	console.log("pages/fichelogement Logement() ");
+	//console.log("pages/fichelogement Logement() ");
 
 	const { layoutFlag, changeLayoutFlag } = useLayoutFlag()
 	// Page Sans banniere - Sans text de banniere - Avec footer.
@@ -36,11 +36,11 @@ function Logement() {
  	const [queryParameters] = useSearchParams()
 	//const queryParameters = new URLSearchParams(window.location.search)
 	const logementId = queryParameters.get("logementId")
-	console.log("logementId : ", logementId);
+	//console.log("logementId : ", logementId);
 	
 	const maChaine = `/logement/` + logementId
 	
-	console.log("useFetch : ", maChaine);
+	//console.log("useFetch : ", maChaine);
 
 	const { data, isLoading, error } = useFetch(`http://localhost:8000/logement/` + logementId); // API pour recuperer la data appartement (Id from URL) du fichier Logement.js (from logement.JSON)
 
