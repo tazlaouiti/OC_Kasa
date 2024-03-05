@@ -29,7 +29,7 @@ function Home() {
 	if (theme === 'light') { CardsContainerTheme="CardsContainer--lightgrey" } else { CardsContainerTheme="CardsContainer--darkgrey" }
 
 	if (error) {
-		return <span>Il y a un problème</span>
+		return <span>Bonjour, nos serveurs sont actuellement indisponibles, veuillez re-essayez ultérieurement, merci pour votre compréhension.<br/>Demarrer avec VSCode la partie serveur /oc_kasa/back> nodemon server.</span>
 	}
 
 	//console.log("home logementsList : ", logementsList)	
